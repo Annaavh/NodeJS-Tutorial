@@ -8,7 +8,9 @@ const server = http.createServer((req, res) => {
     res.end("Home page");
   } else if (req.url === "/about") {
     res.writeHead(200, { "Content-Type": "text/plain" });
-    res.end("About page");
+    // res.end("About page");
+    res.write("About");
+    res.end()
   } else if (req.url === "/api") {
     res.writeHead(200, { "Content-Type": "application/json" });
     res.end(

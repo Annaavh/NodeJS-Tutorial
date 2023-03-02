@@ -1,7 +1,7 @@
 //A stream is a sequence of data that is being moved from, one point to another over time
 //work with data in chunks instead of waiting for the entire data to bbe available at once
 const fs = require("fs");
-const zlib = require("zlib"); //helps to create zib files
+const zlib = require("zlib"); //helps to create zip files
 
 const gzip = zlib.createGzip();
 
